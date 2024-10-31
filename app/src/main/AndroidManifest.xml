@@ -25,6 +25,11 @@
             android:name=".EmployeeHomeActivity"
             android:exported="true" >
         </activity>
+        <activity
+            android:name=".PersonalInformationActivity"
+            android:exported="true" >
+        </activity>
+
     </application>
 
 </manifest>

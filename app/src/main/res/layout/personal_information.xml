@@ -2,10 +2,22 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/PersonalInformation"
+    android:id="@+id/personalInformationRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Name Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/label_name"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Name EditText -->
     <EditText
         android:id="@+id/NameEdit"
         android:layout_width="312dp"
@@ -13,24 +25,123 @@
         android:layout_marginStart="49dp"
         android:layout_marginTop="143dp"
         android:background="@drawable/rounded_edittext"
-        android:hint="Enter your name"
+        android:hint="@string/hint_name"
         android:inputType="textPersonName"
         android:padding="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Gender Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="202dp"
+        android:text="@string/label_gender"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Gender EditText -->
     <EditText
         android:id="@+id/GenderEdit"
         android:layout_width="128dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="235dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="224dp"
         android:background="@drawable/rounded_edittext"
-        android:hint="Gender"
+        android:hint="@string/hint_gender"
         android:inputType="textPersonName"
         android:padding="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Date of Birth Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="233dp"
+        android:layout_marginTop="202dp"
+        android:text="@string/label_dob"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Date of Birth EditText -->
+    <EditText
+        android:id="@+id/dobEdit"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="233dp"
+        android:layout_marginTop="224dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/hint_dob"
+        android:inputType="date"
+        android:padding="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Join Date Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="356dp"
+        android:text="@string/label_join_date"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Join Date EditText -->
+    <EditText
+        android:id="@+id/JoinDateInput"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/hint_join_date"
+        android:inputType="date"
+        android:padding="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Email Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="280dp"
+        android:text="@string/label_email"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Email EditText -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="302dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Logout Button -->
+    <ImageButton
+        android:id="@+id/logoutButton"
+        android:layout_width="121dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="437dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Logout"
+        android:src="@drawable/logout_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

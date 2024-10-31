@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
+    <!-- Settings Button -->
     <Button
         android:id="@+id/SettingsButton"
         android:layout_width="168dp"
@@ -14,10 +14,11 @@
         android:layout_marginStart="128dp"
         android:layout_marginTop="96dp"
         android:padding="12dp"
-        android:text="settings"
+        android:text="@string/settings"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Request Holiday Button -->
     <Button
         android:id="@+id/PersonalHolidayButton"
         android:layout_width="168dp"
@@ -25,10 +26,11 @@
         android:layout_marginStart="128dp"
         android:layout_marginTop="164dp"
         android:padding="12dp"
-        android:text="Request Holiday"
+        android:text="@string/request_holiday"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Personal Information Button -->
     <Button
         android:id="@+id/PersonalInformation"
         android:layout_width="168dp"
@@ -36,10 +38,11 @@
         android:layout_marginStart="129dp"
         android:layout_marginTop="231dp"
         android:padding="12dp"
-        android:text="Personal Information"
+        android:text="@string/personal_information"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Logout Button -->
     <ImageButton
         android:id="@+id/logoutButton"
         android:layout_width="121dp"
@@ -47,7 +50,7 @@
         android:layout_marginStart="145dp"
         android:layout_marginTop="437dp"
         android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="Logout"
+        android:contentDescription="@string/logout"
         android:src="@drawable/logout_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
