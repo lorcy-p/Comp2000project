@@ -15,8 +15,8 @@
         android:layout_marginStart="186dp"
         android:layout_marginTop="68dp"
         android:layout_marginEnd="187dp"
-        android:text="Log in"
-        android:textSize="24dp"
+        android:text="@string/Log_in"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
         android:layout_marginTop="144dp"
-        android:text="Email"
+        android:text="@string/Email"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/rounded_edittext"
-        android:hint="Enter your email"
+        android:hint="@string/Email_input"
         android:inputType="textEmailAddress"
         android:padding="12dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
         android:layout_marginTop="20dp"
-        android:text="Password"
+        android:text="@string/Password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/emailEditText" />
 
@@ -61,7 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/rounded_edittext"
-        android:hint="Enter your password"
+        android:hint="@string/Password_input"
         android:inputType="textPassword"
         android:padding="12dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,7 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:padding="12dp"
-        android:text="Log in"
+        android:text="@string/loginButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
