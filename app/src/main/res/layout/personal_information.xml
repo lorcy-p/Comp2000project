@@ -139,7 +139,7 @@
         android:layout_marginStart="145dp"
         android:layout_marginTop="437dp"
         android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="Logout"
+        android:contentDescription="@string/logout"
         android:src="@drawable/logout_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
