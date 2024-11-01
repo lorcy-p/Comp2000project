@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/adminHolidayRequestsRoot">
+
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/employeeName"
+        android:layout_width="241dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/employee_name"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+    <TextView
+        android:id="@+id/startDate"
+        android:layout_width="282dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="64dp"
+        android:text="@string/request_date"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/employeeName" />
+
+    <TextView
+        android:id="@+id/reason"
+        android:layout_width="249dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="64dp"
+        android:text="@string/reason"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startDate" />
+
+    <Button
+        android:id="@+id/approveButton"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="@string/approve"
+        app:layout_constraintEnd_toStartOf="@+id/denyButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reason" />
+
+    <Button
+        android:id="@+id/denyButton"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="@string/deny"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/approveButton"
+        app:layout_constraintTop_toBottomOf="@id/reason" />
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="201dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="327dp"
+        android:background="@drawable/transparent_box_background"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/calendarView" />
+
+    <ImageButton
+        android:id="@+id/logoutButton"
+        android:layout_width="121dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="564dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/logout"
+        android:src="@drawable/logout_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
