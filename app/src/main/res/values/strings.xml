@@ -27,16 +27,14 @@
     <string name="start_date_label">Start Date</string>
     <string name="end_date_label">End Date</string>
     <string name="reason_label">Reason</string>
-    <string name="hint_reason">Enter the reason</string>
     <string name="remaining_leave_label">Remaining Leave:</string>
-    <string name="holiday_status_label">Holiday Request Status</string>
     <string name="remaining_leave">N/A</string>
 
     <string name="holiday_request_checkbox">Update to Holiday Request</string>
     <string name="update_details_checkbox">Update to Details</string>
 
     <string name="employee_name">Employee Name: John Doe</string>
-    <string name="request_date">Date: 01/12/2024 - 03/12/2024</string>
+    <string name="request_date">Date: 01/12/2024 _ 03/12/2024</string>
     <string name="reason">Reason: Family Commitment</string>
     <string name="approve">Approve</string>
     <string name="deny">Deny</string>
